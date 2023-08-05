@@ -1,0 +1,38 @@
+<!-- app/views/welcome/admin.html.erb -->
+
+<h1>Welcome to the Admin Dashboard!</h1>
+
+<p>This is the Admin dashboard page. You can display any relevant information here.</p>
+
+<div id="froala">
+  <%= text_area_tag 'editor-content' %>
+</div>
+<script>
+  new FroalaEditor('#editor-content');
+</script>
+
+<!-- submit files -->
+<%= form_with(model: @file_record, local: true) do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.file_field :attachment %>
+  <%= form.submit 'Upload File' %>
+<% end %>
+
+<!-- display files -->
+<ul>
+  <% if @file_records.present? %>
+    <% @file_records.each do |file_record| %>
+      <li>
+        <%= file_record.name %>
+        <% if file_record.attachment.attached? %>
+          <!-- Display file attachment -->
+        <% else %>
+          No file attached.
+        <% end %>
+      </li>
+    <% end %>
+  <% else %>
+    <li>No files available.</li>
+  <% end %>
+</ul>

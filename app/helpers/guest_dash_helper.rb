@@ -1,0 +1,2 @@
+module GuestDashHelper
+end

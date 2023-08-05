@@ -1,0 +1,12 @@
+<!-- app/views/welcome/guest.html.erb -->
+
+<h1>Welcome to the Guest Dashboard!</h1>
+
+<p>This is the Guest dashboard page. You can display any relevant information here.</p>
+
+<div id="froala">
+  <%= text_area_tag 'editor-content' %>
+</div>
+<script>
+  new FroalaEditor('#editor-content');
+</script>

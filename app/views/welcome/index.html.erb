@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+<head>
+    <!-- ... (rest of your head content) ... -->
+    <style>
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .u-btn {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #478ac9; /* Blue color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .u-btn:hover {
+            background-color: #366b99; /* Darker shade on hover */
+        }
+        .u-header {
+            text-align: center;
+        }
+        .u-text-1 {
+            font-size: 56pt;
+        }
+        .u-subtitle {
+            font-size: 24pt;
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="u-body u-xl-mode" data-lang="en">
+    <header class="u-clearfix u-header u-header" id="sec-9d7d">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-custom-font u-font-arial u-text u-text-default u-text-1">ULegislate</h1>
+            <div class="u-subtitle">Bringing simple and effective Legislation to U</div>
+        </div>
+    </header>
+    <section class="u-clearfix u-section-1" id="sec-73f8">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="button-container">
+                <a href="/chair" class="u-btn u-button-style">Committee Chair</a>
+                <a href="/admin" class="u-btn u-button-style">Admin</a>
+                <a href="<%= leg_admin_path %>" class="u-btn u-button-style">Legislative Admin</a>
+                <a href="<%= senator_path %>" class="u-btn u-button-style">Senator</a>
+                <a href="<%= exec_admin_path %>" class="u-btn u-button-style">Executive Admin</a>
+                <a href="<%= guest_path %>" class="u-btn u-button-style">Guest</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-0d7a">
+        <!-- ... (footer content) ... -->
+    </footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+        <!-- ... (backlink content) ... -->
+    </section>
+</body>
+</html>
+
+

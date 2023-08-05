@@ -1,0 +1,12 @@
+<!-- app/views/welcome/committee_chair.html.erb -->
+
+<h1>Welcome to the Committee Chair Dashboard!</h1>
+
+<p>This is the Committee Chair dashboard page. You can display any relevant information here.</p>
+
+<div id="froala">
+  <%= text_area_tag 'editor-content' %>
+</div>
+<script>
+  new FroalaEditor('#editor-content');
+</script>
